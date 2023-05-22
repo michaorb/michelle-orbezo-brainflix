@@ -1,0 +1,34 @@
+@use '../../styles/_partials/fonts' as *;
+@use '../../styles/_partials/mixins' as *;
+@use '../../styles/_partials/variables' as *;
+@use '../searchbar/searchbar.scss' as *;
+
+.header {
+    // width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include media-tablet {
+        flex-direction: row;
+    }
+    &__logo {
+        width: 20%;
+        height: auto;
+    }
+    &__mobile-bp {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    #searchbar {
+        width: 60%;
+    }
+    &__profile {
+        @include profile-tn;
+    }
+    .upload {
+        @include labels-buttons; //This returns a compilation error; line 58 in mixins
+        display: inline-block;
+        width: 100%;
+    }
+}

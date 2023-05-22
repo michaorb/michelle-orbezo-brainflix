@@ -1,0 +1,72 @@
+@use './variables' as *;
+@use './fonts' as *;
+
+// Media Query Mixins
+@mixin media-tablet {
+    @media (min-width: $bp-tablet) {
+        @content;
+    }
+}
+
+@mixin media-desktop {
+    @media (min-width: $bp-desktop) {
+        @content;
+    }
+}
+
+// Text Styles
+@mixin page-header {
+    font-family: $Primary-Font;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+    @include media-tablet {
+        font-size: 33px;
+        line-height: 44px;
+    }
+}
+
+@mixin section-header {
+    font-family: $Primary-Font;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 700;
+}
+
+@mixin subheader {
+    font-family: $Primary-Font;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 700;
+    @include media-tablet {
+        font-size: 14px;
+        line-height: 22px;
+    }
+}
+
+@mixin body-copy {
+    font-family: $Primary-Font;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    @include media-tablet {
+        font-size: 14px;
+        line-height: 22px;
+    }
+}
+
+@mixin labels-buttons {
+    font-family: $Primary-Font;
+    font-size: 10px;
+    line-height: 20px;
+    font-weight: 700;
+    @include media-tablet {
+        font-size: 12px;
+    }
+}
+
+// Thumbnails
+@mixin profile-tn {
+    width: 20%;
+    height: 20%;
+}
