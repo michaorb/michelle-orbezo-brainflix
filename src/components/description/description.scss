@@ -1,12 +1,14 @@
-@use '../../styles/_partials/fonts' as *;
-@use '../../styles/_partials/mixins' as *;
-@use '../../styles/_partials/variables' as *;
+// @use '../../styles/_partials/fonts' as *;
+// @use '../../styles/_partials/mixins' as *;
+// @use '../../styles/_partials/variables' as *;
 
 .description {
     @include padding;
     @include divider;
     @include page-header;
+    @include section-header;
     @include subheader;
+    @include body-copy;
     display: flex;
     flex-direction: column;
     h1 {
@@ -17,28 +19,16 @@
         display: flex;
         justify-content: flex-start;
         column-gap: 20%;
-        // p {
-        //     padding-bottom: 12px;
-        // }
         @include media-tablet {
             display: flex;
-            // .tablet-bp__attributes {
-            //     @include media-tablet {
-            //         display: flex;
-            //     }
             }
-            // .tablet-bp__icons {
-            //     width: max-content;
-            //     @include media-tablet {
-            //         display: flex;
-            //     }
-            // }
     }
     &__attributes {
         display: flex;
         flex-direction: column;
         height: fit-content;
         gap: 20%;
+        color: $BF-Mercury;
         @include media-tablet {
             display: flex;
         }
@@ -53,11 +43,22 @@
             display: flex;
         }
     }
+    &__likes, &__views {
+        display: flex;
+        column-gap: 12px;
+        margin: 0;
+        p {
+            color: $BF-Mercury;
+        }
+    }
+    &__date {
+        font-weight: normal;
+    }
+    &__text {
+        @include padding-top-bottom;
+    }
+    &__bolded {
+        margin: 0;
+        color: black;
+    }
  }
-
-.icons__views, .icons__likes {
-    display: flex;
-    column-gap: 12px;
-    margin: 0;
-    // padding-bottom: 12px;
-}

@@ -29,31 +29,41 @@
 }
 
 @mixin section-header {
-    font-family: $Primary-Font;
-    font-size: 12px;
-    line-height: 20px;
-    font-weight: 700;
+    h2 {
+        font-family: $Primary-Font;
+        color: $BF-Mercury;
+        font-size: 12px;
+        line-height: 20px;
+        font-weight: 700;
+        text-transform:uppercase;
+        margin: 0;
+    }
 }
 
 @mixin subheader {
-    font-family: $Primary-Font;
-    font-size: 13px;
-    line-height: 18px;
-    font-weight: 700;
-    @include media-tablet {
-        font-size: 14px;
-        line-height: 22px;
+    h3 {
+        font-family: $Primary-Font;
+        font-size: 13px;
+        line-height: 18px;
+        font-weight: 700;
+        margin: 0;
+        @include media-tablet {
+            font-size: 14px;
+            line-height: 22px;
+        }
     }
 }
 
 @mixin body-copy {
-    font-family: $Primary-Font;
-    font-size: 13px;
-    line-height: 18px;
-    font-weight: 400;
-    @include media-tablet {
-        font-size: 14px;
-        line-height: 22px;
+    p {
+        font-family: $Primary-Font;
+        font-size: 13px;
+        line-height: 18px;
+        font-weight: 400;
+        @include media-tablet {
+            font-size: 14px;
+            line-height: 22px;
+        }
     }
 }
 
@@ -106,6 +116,7 @@
     width: 36px;
     height: 36px;
     border-radius: 50%;
+    object-fit: cover;
     @include media-tablet {
         width: 40px;
         height: 40px;

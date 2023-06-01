@@ -1,0 +1,107 @@
+@font-face {
+  font-family: "Avenir";
+  font-weight: 700;
+  font-style: normal;
+  src: url("assets/fonts/AvenirNextLTPro-Bold.otf") format(otf);
+}
+@font-face {
+  font-family: "Avenir";
+  font-weight: 400;
+  font-style: normal;
+  src: url("assets/fonts/AvenirNextLTPro-Regular.otf") format(otf);
+}
+@font-face {
+  font-family: "Avenir";
+  font-weight: 700;
+  font-style: normal;
+  src: url("assets/fonts/Alternative/AvenirNextLTProBold.ttf") format(ttf);
+}
+@font-face {
+  font-family: "Avenir";
+  font-weight: 400;
+  font-style: normal;
+  src: url("assets/fonts/Alternative/AvenirNextLTPro.ttf") format(ttf);
+}
+.comment {
+  width: 100%;
+}
+.comment h3 {
+  font-family: "Avenir", "Montserrat";
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 700;
+  margin: 0;
+}
+@media (min-width: 768px) {
+  .comment h3 {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+.comment p {
+  font-family: "Avenir", "Montserrat";
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+}
+@media (min-width: 768px) {
+  .comment p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+.comment__container {
+  display: flex;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 24px;
+  padding-bottom: 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+@media (min-width: 768px) {
+  .comment__container {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 36px;
+    padding-bottom: 24px;
+  }
+}
+.comment__profile-placeholder {
+  background-color: #E1E1E1;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: flex;
+  width: 35vw;
+}
+@media (min-width: 768px) {
+  .comment__profile-placeholder {
+    width: 40px;
+    height: 40px;
+  }
+}
+.comment__content {
+  display: flex;
+  flex-direction: column;
+  padding-left: 16px;
+}
+.comment__attributes {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 12px;
+}
+.comment__text p {
+  font-family: "Avenir", "Montserrat";
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+}
+@media (min-width: 768px) {
+  .comment__text p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}/*# sourceMappingURL=comment.css.map */

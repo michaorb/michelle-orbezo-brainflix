@@ -14,23 +14,23 @@ function Description({videoDetails}) {
             <hr />
             <div className='description__tablet-bp'>
                 <div className='description__attributes'>
-                    <p>By {videoDetails.channel}</p>
-                    <time>{formattedDate}</time>
+                    <h3 className='description__bolded'>By {videoDetails.channel}</h3>
+                    <p className='description__date'><time>{formattedDate}</time></p>
                 </div>
                 <div className='description__icons'>
-                    <div className='icons__views'>
+                    <div className='description__views'>
                         <img src={ViewsIcon} alt='Views Icon' />
                         <p>{videoDetails.views}</p>
                     </div>
-                        <div className='icons__likes'>
+                        <div className='description__likes'>
                         <img src={LikesIcon} alt='Likes Icons' />
                         <p>{videoDetails.likes}</p>
                     </div>
                     </div>
             </div>
             <hr />
-            <p>{videoDetails.description}</p>
-            <p>3 Comments</p>
+            <p className='description__text'>{videoDetails.description}</p>
+            <h3 className='description__bolded'>{videoDetails.comments.length} Comments</h3>
         </div>
     )
 }

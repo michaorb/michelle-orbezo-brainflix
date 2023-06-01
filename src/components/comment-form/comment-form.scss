@@ -1,0 +1,22 @@
+// Mixins
+@use '../../styles/_partials/fonts' as *;
+@use '../../styles/_partials/mixins' as *;
+@use '../../styles/_partials/variables' as *;
+
+.form {
+    @include section-header;
+    textarea::placeholder {
+        font-family: $Primary-Font;
+        font-size: 13px;
+        line-height: 18px;
+        font-weight: 400;
+        @include media-tablet {
+            font-size: 14px;
+            line-height: 22px;
+        }
+    }
+    button {
+        @include labels-buttons;
+        @include CTA-button;
+    }
+}

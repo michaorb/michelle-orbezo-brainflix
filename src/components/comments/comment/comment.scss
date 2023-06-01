@@ -1,0 +1,38 @@
+// Mixins
+@use '../../../styles/_partials/fonts' as *;
+@use '../../../styles/_partials/mixins' as *;
+@use '../../../styles/_partials/variables' as *;
+
+.comment {
+    @include subheader;
+    @include body-copy;
+    width: 100%;
+    &__container {
+        display: flex;
+        @include padding;
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+    &__profile-placeholder {
+        background-color: $BF-Mercury;
+        @include profile-tn;
+        display: flex;
+        width: 35vw;
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        // width: 100%;
+        padding-left: 16px;
+    }
+    &__attributes {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 12px;
+    }
+    &__text {
+        @include body-copy;
+        // @include padding-top-bottom;
+        // width: fit-content;
+    }
+}

@@ -1,0 +1,8 @@
+@use './video/video.scss';
+@use '../../styles/_partials/fonts' as *;
+@use '../../styles/_partials/mixins' as *;
+@use '../../styles/_partials/variables' as *;
+
+.videos {
+    @include section-header;
+}
