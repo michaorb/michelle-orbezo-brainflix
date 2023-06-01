@@ -22,20 +22,6 @@
   font-style: normal;
   src: url("assets/fonts/Alternative/AvenirNextLTPro.ttf") format(ttf);
 }
-#searchbar {
-  margin-bottom: 16px;
-  width: 75vw;
-  background-image: url(assets/icons/search.svg);
-  background-repeat: no-repeat;
-  background-position: 5% 50%;
-  border-color: #E1E1E1;
-  border-radius: 4px;
-  border-style: solid 1px;
-  padding-top: 12px;
-  padding-left: 36px;
-  padding-bottom: 12px;
-  outline: none;
-}
-#searchbar :active {
-  border-color: #E1E1E1;
-}/*# sourceMappingURL=searchbar.css.map */
+video {
+  width: 100%;
+}/*# sourceMappingURL=hero.css.map */

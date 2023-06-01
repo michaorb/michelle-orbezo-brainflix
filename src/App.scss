@@ -2,3 +2,9 @@
 // @use './styles/_partials/fonts' as *;
 // @use './styles/_partials/variables' as *;
 @use './components/header/header.scss' as *;
+@use './components/hero/hero.scss' as *;
+@use './components/description/description.scss' as *;
+
+p {
+    margin: 0;
+}

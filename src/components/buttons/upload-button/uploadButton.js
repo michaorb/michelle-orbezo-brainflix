@@ -1,7 +1,7 @@
 // Search Bar Element Import
 import React, { useState } from 'react';
 // Stylesheet Import
-import './uploadbutton.scss';
+import './uploadbutton.css';
 
 function UploadButton() {
     return (

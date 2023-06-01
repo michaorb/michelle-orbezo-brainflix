@@ -1,7 +1,7 @@
 // Search Bar Element Import
 import React, { useState } from 'react';
 // Stylesheet Import
-import './searchbar.scss';
+import './searchbar.css';
 
 const SearchBar = () => {
     const [searchInput, setSearchInput] = useState("");

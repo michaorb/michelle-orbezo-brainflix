@@ -16,13 +16,15 @@
 
 // Text Styles
 @mixin page-header {
-    font-family: $Primary-Font;
-    font-size: 24px;
-    line-height: 32px;
-    font-weight: 700;
-    @include media-tablet {
-        font-size: 33px;
-        line-height: 44px;
+    h1 {
+        font-family: $Primary-Font;
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: 700;
+        @include media-tablet {
+            font-size: 33px;
+            line-height: 44px;
+        }
     }
 }
 
@@ -57,16 +59,75 @@
 
 @mixin labels-buttons {
     font-family: $Primary-Font;
+    text-transform: uppercase;
     font-size: 10px;
     line-height: 20px;
-    font-weight: 700;
+    font-weight: 400;
     @include media-tablet {
         font-size: 12px;
     }
 }
 
+// Form Fields
+
+// Padding
+@mixin padding {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 24px;
+    padding-bottom: 16px;
+    @include media-tablet {
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-top: 36px;
+        padding-bottom: 24px;
+    }
+}
+@mixin padding-top-bottom {
+    padding-top: 24px;
+    padding-bottom: 16px;
+    @include media-tablet {
+        padding-top: 36px;
+        padding-bottom: 24px;
+    }
+}
+
+// Dividers
+@mixin divider {
+    hr {
+        width: 100%;
+        border-top: solid 1px;
+        border-color: $BF-Mercury;
+    }
+}
+
 // Thumbnails
 @mixin profile-tn {
-    width: 20%;
-    height: 20%;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    @include media-tablet {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+// Call to Actions
+@mixin CTA-button {
+    @include labels-buttons;
+    background-color: $BF-Blue;
+    color: $BF-White;
+    height: 40px;
+    width: 100%;
+    padding-left: 32px;
+    padding-right: 32px;
+    border-style: none;
+    border-radius: 4px;
+    :hover {
+        background-color: $BF-DarkBlue;
+        transition-duration: 0.4s;
+    }
+    @include media-tablet {
+        width: 150px;
+    }
 }

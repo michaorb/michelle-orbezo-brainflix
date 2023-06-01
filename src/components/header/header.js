@@ -13,10 +13,8 @@ function Header() {
             <img className="header__logo" src={BrainFlixLogo} alt="BrainFlix logo"/>
             <div className="header__mobile-bp">
                 <SearchBar />
-                <img className="header__profile" src={ProfileThumbnail} alt="Profile thumbnail" />
-            </div>
-            <div className="header__button">
-                <UploadButton />
+                 <img className="header__profile" src={ProfileThumbnail} alt="Profile thumbnail" />
+                 <UploadButton />
             </div>
         </div>
     );

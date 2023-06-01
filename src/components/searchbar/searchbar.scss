@@ -1,0 +1,21 @@
+@use '../../styles/_partials/fonts' as *;
+@use '../../styles/_partials/mixins' as *;
+@use '../../styles/_partials/variables' as *;
+
+#searchbar {
+    margin-bottom: 16px;
+    width: 75vw;
+    background-image: url(assets/icons/search.svg);
+    background-repeat: no-repeat;
+    background-position: 5% 50%;
+    border-color: $BF-Mercury;
+    border-radius: 4px;
+    border-style: solid 1px;
+    padding-top: 12px;
+    padding-left: 36px;
+    padding-bottom: 12px;
+    outline: none;
+    :active {
+        border-color: $BF-Mercury;
+    }
+}

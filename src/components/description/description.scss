@@ -1,0 +1,63 @@
+@use '../../styles/_partials/fonts' as *;
+@use '../../styles/_partials/mixins' as *;
+@use '../../styles/_partials/variables' as *;
+
+.description {
+    @include padding;
+    @include divider;
+    @include page-header;
+    @include subheader;
+    display: flex;
+    flex-direction: column;
+    h1 {
+        margin-top: 0;
+    }
+    &__tablet-bp {
+        @include padding-top-bottom;
+        display: flex;
+        justify-content: flex-start;
+        column-gap: 20%;
+        // p {
+        //     padding-bottom: 12px;
+        // }
+        @include media-tablet {
+            display: flex;
+            // .tablet-bp__attributes {
+            //     @include media-tablet {
+            //         display: flex;
+            //     }
+            }
+            // .tablet-bp__icons {
+            //     width: max-content;
+            //     @include media-tablet {
+            //         display: flex;
+            //     }
+            // }
+    }
+    &__attributes {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        gap: 20%;
+        @include media-tablet {
+            display: flex;
+        }
+    }
+    &__icons {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        gap: 20%;
+        width: max-content;
+        @include media-tablet {
+            display: flex;
+        }
+    }
+ }
+
+.icons__views, .icons__likes {
+    display: flex;
+    column-gap: 12px;
+    margin: 0;
+    // padding-bottom: 12px;
+}

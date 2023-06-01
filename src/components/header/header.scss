@@ -1,34 +1,58 @@
 @use '../../styles/_partials/fonts' as *;
 @use '../../styles/_partials/mixins' as *;
 @use '../../styles/_partials/variables' as *;
-@use '../searchbar/searchbar.scss' as *;
+@use '../searchbar/searchbar.css' as *;
+@use '../buttons/upload-button/uploadbutton.css' as *;
 
 .header {
-    // width: 100%;
+    @include padding;
+    padding-top: 16px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     @include media-tablet {
+        flex-wrap: nowrap;
         flex-direction: row;
+        padding-top: 24px;
     }
     &__logo {
-        width: 20%;
+        display: inline-block;
         height: auto;
+        @include media-tablet {
+            order: -1;
+        }
     }
-    &__mobile-bp {
+    &__mobile-bp { // contains searchbar, upload button and profile thumbnail
+        @include padding-top-bottom;
         display: flex;
+        width: auto;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        // column-gap: 0;
+        @include media-tablet {
+            flex-wrap: nowrap;
+        }
     }
     #searchbar {
-        width: 60%;
+        @include media-tablet {
+            order: 0;
+        }
     }
     &__profile {
-        @include profile-tn;
-    }
-    .upload {
-        @include labels-buttons; //This returns a compilation error; line 58 in mixins
-        display: inline-block;
         width: 100%;
+        position: relative;
+        @include profile-tn;
+        @include media-tablet {
+            order: 2;
+        }
+        }
+    .upload {
+        @include media-tablet {
+            display: inline-block;
+            order: 1;
+        }
     }
 }
