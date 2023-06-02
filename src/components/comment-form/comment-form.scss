@@ -4,7 +4,23 @@
 @use '../../styles/_partials/variables' as *;
 
 .form {
+    display: flex;
+    @include padding;
     @include section-header;
+    // margin: 0;
+    padding-top: 0;
+    &__container {
+        display: flex;
+        flex-direction: column;
+        padding-left: 16px;
+        width: 90%;
+    }
+    &__profile-placeholder {
+        background-color: $BF-Mercury;
+        @include profile-tn;
+            display: flex;
+            width: 36px;
+    }
     textarea::placeholder {
         font-family: $Primary-Font;
         font-size: 13px;

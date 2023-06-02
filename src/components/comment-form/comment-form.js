@@ -5,7 +5,9 @@ import '../comment-form/comment-form.css'
 function CommentForm() {
     return (
         <div className='form'>
-            <form>
+            <div className='form__profile-placeholder'>
+            </div>
+            <form className='form__container'>
                 <label for='comment'><h2>Join the Conversation</h2></label>
                 <br/>
                 <textarea rows='5' name='comment' className='form__comment' placeholder='Add new comment'/>

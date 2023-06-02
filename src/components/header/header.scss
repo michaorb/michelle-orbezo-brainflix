@@ -44,6 +44,7 @@
     &__profile {
         width: 100%;
         position: relative;
+        object-fit: cover;
         @include profile-tn;
         @include media-tablet {
             order: 2;

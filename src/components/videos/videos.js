@@ -3,10 +3,10 @@ import Video from "./video/video";
 // Stylesheet
 import './videos.css';
 
-function Videos({videosArray}) {
+function Videos({videosArray, updateVideo}) {
     const videoComponentsArray = videosArray.map((video) => {
         return (
-            <Video videoData={video}/>
+            <Video videoData={video} updateVideo={updateVideo}/>
         )
     })
     return (

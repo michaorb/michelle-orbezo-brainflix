@@ -6,10 +6,10 @@
 .comment {
     @include subheader;
     @include body-copy;
-    width: 100%;
+    @include padding-left-right;
     &__container {
         display: flex;
-        @include padding;
+        @include padding-top-bottom;
         padding-top: 12px;
         padding-bottom: 12px;
     }

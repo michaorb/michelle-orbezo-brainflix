@@ -101,6 +101,14 @@
         padding-bottom: 24px;
     }
 }
+@mixin padding-left-right {
+    padding-left: 16px;
+    padding-right: 16px;
+    @include media-tablet {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
 
 // Dividers
 @mixin divider {
