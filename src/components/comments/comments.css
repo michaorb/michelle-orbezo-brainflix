@@ -1,1 +1,39 @@
-/*# sourceMappingURL=comments.css.map */
+@font-face {
+  font-family: "Avenir";
+  font-weight: 700;
+  font-style: normal;
+  src: url("assets/fonts/AvenirNextLTPro-Bold.otf") format(otf);
+}
+@font-face {
+  font-family: "Avenir";
+  font-weight: 400;
+  font-style: normal;
+  src: url("assets/fonts/AvenirNextLTPro-Regular.otf") format(otf);
+}
+@font-face {
+  font-family: "Avenir";
+  font-weight: 700;
+  font-style: normal;
+  src: url("assets/fonts/Alternative/AvenirNextLTProBold.ttf") format(ttf);
+}
+@font-face {
+  font-family: "Avenir";
+  font-weight: 400;
+  font-style: normal;
+  src: url("assets/fonts/Alternative/AvenirNextLTPro.ttf") format(ttf);
+}
+.comments {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+@media (min-width: 768px) {
+  .comments {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+.comments hr {
+  width: 100%;
+  border-top: solid 1px;
+  border-color: #E1E1E1;
+}/*# sourceMappingURL=comments.css.map */

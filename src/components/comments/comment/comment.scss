@@ -6,7 +6,6 @@
 .comment {
     @include subheader;
     @include body-copy;
-    @include padding-left-right;
     &__container {
         display: flex;
         @include padding-top-bottom;
@@ -16,13 +15,12 @@
     &__profile-placeholder {
         background-color: $BF-Mercury;
         @include profile-tn;
-        display: flex;
-        width: 35vw;
+        //display: flex;
+        //width: auto;
     }
     &__content {
         display: flex;
         flex-direction: column;
-        // width: 100%;
         padding-left: 16px;
     }
     &__attributes {
@@ -32,7 +30,8 @@
     }
     &__text {
         @include body-copy;
-        // @include padding-top-bottom;
-        // width: fit-content;
+    }
+    &__date {
+        color: $Silver;
     }
 }

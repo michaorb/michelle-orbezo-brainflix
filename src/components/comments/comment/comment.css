@@ -22,12 +22,9 @@
   font-style: normal;
   src: url("assets/fonts/Alternative/AvenirNextLTPro.ttf") format(ttf);
 }
-.comment {
-  padding-left: 16px;
-  padding-right: 16px;
-}
 .comment h3 {
   font-family: "Avenir", "Montserrat";
+  color: #000;
   font-size: 13px;
   line-height: 18px;
   font-weight: 700;
@@ -51,12 +48,6 @@
     line-height: 22px;
   }
 }
-@media (min-width: 768px) {
-  .comment {
-    padding-left: 24px;
-    padding-right: 24px;
-  }
-}
 .comment__container {
   display: flex;
   padding-top: 24px;
@@ -77,8 +68,6 @@
   border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
-  display: flex;
-  width: 35vw;
 }
 @media (min-width: 768px) {
   .comment__profile-placeholder {
@@ -107,4 +96,7 @@
     font-size: 14px;
     line-height: 22px;
   }
+}
+.comment__date {
+  color: #AFAFAF;
 }/*# sourceMappingURL=comment.css.map */

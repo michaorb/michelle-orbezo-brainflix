@@ -1,3 +1,26 @@
+.video {
+  display: flex;
+  padding-top: 16px;
+  padding-bottom: 0;
+}
+.video__thumbnail {
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 16/9;
+  width: 40%;
+  height: 20%;
+  border-radius: 4px;
+}
+.video__info {
+  padding-left: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.video__info h3 {
+  padding-bottom: 10px;
+}
+
 @font-face {
   font-family: "Avenir";
   font-weight: 700;
@@ -22,12 +45,65 @@
   font-style: normal;
   src: url("assets/fonts/Alternative/AvenirNextLTPro.ttf") format(ttf);
 }
+.videos {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 36px;
+}
 .videos h2 {
   font-family: "Avenir", "Montserrat";
-  color: #E1E1E1;
+  color: #AFAFAF;
   font-size: 12px;
   line-height: 20px;
   font-weight: 700;
   text-transform: uppercase;
   margin: 0;
+}
+.videos h3 {
+  font-family: "Avenir", "Montserrat";
+  color: #000;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 700;
+  margin: 0;
+}
+@media (min-width: 768px) {
+  .videos h3 {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+.videos p {
+  font-family: "Avenir", "Montserrat";
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+}
+@media (min-width: 768px) {
+  .videos p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media (min-width: 768px) {
+  .videos {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+.videos h2 {
+  padding-top: 24px;
+  padding-bottom: 16px;
+  padding-bottom: 0;
+}
+@media (min-width: 768px) {
+  .videos h2 {
+    padding-top: 36px;
+    padding-bottom: 24px;
+  }
+}
+@media (min-width: 768px) {
+  .videos {
+    width: 40%;
+  }
 }/*# sourceMappingURL=videos.css.map */

@@ -10,9 +10,10 @@ function CommentForm() {
             <form className='form__container'>
                 <label for='comment'><h2>Join the Conversation</h2></label>
                 <br/>
-                <textarea rows='5' name='comment' className='form__comment' placeholder='Add new comment'/>
-                <br />
-                <button type='submit'>Comment</button>
+                <div className='form__input'>
+                    <textarea rows='5' name='comment' className='form__comment' placeholder='Add new comment'/>
+                    <button type='submit'>Comment</button>
+                </div>
             </form>
         </div>
     )

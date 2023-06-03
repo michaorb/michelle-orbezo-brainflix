@@ -7,9 +7,11 @@ function Video({videoData, updateVideo}) {
     }
     return (
         <div className='video' onClick={loadNewVideo}>
-            <img src={videoData.image}/>
-            <h3>{videoData.title}</h3>
-            <p>{videoData.channel}</p>
+            <img className='video__thumbnail' src={videoData.image}/>
+            <div className='video__info'>
+                <h3>{videoData.title}</h3>
+                <p>{videoData.channel}</p>
+            </div>
         </div>
     )
 }

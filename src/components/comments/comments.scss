@@ -1,0 +1,6 @@
+@use '../../styles/_partials/mixins' as *;
+
+.comments {
+    @include padding-left-right;
+    @include divider;
+}

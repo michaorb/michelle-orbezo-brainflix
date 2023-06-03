@@ -5,4 +5,16 @@
 
 .videos {
     @include section-header;
+    @include subheader;
+    @include body-copy;
+    @include padding-left-right;
+    padding-bottom: 36px;
+    h2 {
+        @include padding-top-bottom;
+        padding-bottom: 0;
+    }
+
+    @include media-tablet {
+        width: 40%;
+    }
 }

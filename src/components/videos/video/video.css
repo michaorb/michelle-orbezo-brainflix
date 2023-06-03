@@ -1,1 +1,22 @@
-/*# sourceMappingURL=video.css.map */
+.video {
+  display: flex;
+  padding-top: 16px;
+  padding-bottom: 0;
+}
+.video__thumbnail {
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 16/9;
+  width: 40%;
+  height: 20%;
+  border-radius: 4px;
+}
+.video__info {
+  padding-left: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.video__info h3 {
+  padding-bottom: 10px;
+}/*# sourceMappingURL=video.css.map */

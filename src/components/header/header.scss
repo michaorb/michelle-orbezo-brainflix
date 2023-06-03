@@ -2,7 +2,7 @@
 @use '../../styles/_partials/mixins' as *;
 @use '../../styles/_partials/variables' as *;
 @use '../searchbar/searchbar.css' as *;
-@use '../buttons/upload-button/uploadbutton.css' as *;
+@use '../upload-button/uploadbutton.css' as *;
 
 .header {
     @include padding;
@@ -10,10 +10,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    // justify-content: space-evenly;
     flex-wrap: wrap;
     @include media-tablet {
         flex-wrap: nowrap;
+        justify-content: space-between;
         flex-direction: row;
         padding-top: 24px;
     }
@@ -48,6 +49,7 @@
         @include profile-tn;
         @include media-tablet {
             order: 2;
+            margin-left: 16px;
         }
         }
     .upload {

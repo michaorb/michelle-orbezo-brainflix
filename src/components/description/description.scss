@@ -1,6 +1,6 @@
-// @use '../../styles/_partials/fonts' as *;
-// @use '../../styles/_partials/mixins' as *;
-// @use '../../styles/_partials/variables' as *;
+@use '../../styles/_partials/fonts' as *;
+@use '../../styles/_partials/mixins' as *;
+@use '../../styles/_partials/variables' as *;
 
 .description {
     @include padding;
@@ -28,7 +28,7 @@
         flex-direction: column;
         height: fit-content;
         gap: 20%;
-        color: $BF-Mercury;
+        color: $Silver;
         @include media-tablet {
             display: flex;
         }
@@ -48,7 +48,7 @@
         column-gap: 12px;
         margin: 0;
         p {
-            color: $BF-Mercury;
+            color: $Silver;
         }
     }
     &__date {

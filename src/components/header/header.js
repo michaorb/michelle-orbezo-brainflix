@@ -3,7 +3,7 @@ import BrainFlixLogo from 'assets/logo/BrainFlix-logo.svg';
 import ProfileThumbnail from 'assets/images/Mohan-muruge.jpg';
 // Component Imports
 import SearchBar from 'components/searchbar/searchBar';
-import UploadButton from 'components/buttons/upload-button/uploadButton';
+import UploadButton from 'components/upload-button/uploadButton';
 // Stylesheet Import
 import './header.css';
 

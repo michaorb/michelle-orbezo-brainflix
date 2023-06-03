@@ -7,7 +7,6 @@
     display: flex;
     @include padding;
     @include section-header;
-    // margin: 0;
     padding-top: 0;
     &__container {
         display: flex;
@@ -31,8 +30,40 @@
             line-height: 22px;
         }
     }
+
+    textarea {
+        // background-color: $BF-Mercury;
+        // border-color: $Silver;
+        // border-radius: 4px;
+        // opacity: 0.3;]
+        @include form-field;
+        &:focus-visible {
+            outline: none;
+            border-color: $BF-Blue;
+        }
+        // &:focus {
+        //     outline: none;
+        //     border-color: $BF-Blue;
+        // }
+
+        @include media-tablet {
+            height: 1em;
+            flex-grow: 3;
+        }
+    }
     button {
         @include labels-buttons;
         @include CTA-button;
+        background-image: url(assets/icons/add_comment.svg);    
+    }
+
+    &__input {
+        display: flex;
+        flex-direction: column;
+
+        @include media-tablet {
+            flex-direction: row;
+            gap: 20px;
+        }
     }
 }
