@@ -3,5 +3,8 @@
 @use '../../styles/_partials/variables' as *;
 
 video {
+    aspect-ratio: 16 / 9;
+    background-color: $BF-DarkBlack;
+    object-fit: contain;
     width: 100%;
 }

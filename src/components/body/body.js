@@ -8,7 +8,7 @@ import { useState } from "react";
 import videoInfo from 'data/video-details.json';
 import videosArray from 'data/videos.json'
 
-// CSS Stylesheets
+//Stylesheet
 import './body.css';
 
 function Body () {
@@ -24,12 +24,16 @@ function Body () {
         return currentVideo.title != videoDetails.title
     })
     return (
-        <div>
+        <div className="body">
             <Hero videoDetails={videoDetails}/>
-            <Description videoDetails={videoDetails}/>
-            <CommentForm />
-            <Comments commentsArray={videoDetails.comments}/>
-            <Videos videosArray={filterOutCurrentVideo} updateVideo={updateVideo}/>
+            <div className="body__container">
+                <div className="body__video-data">
+                    <Description videoDetails={videoDetails}/>
+                    <CommentForm />
+                    <Comments commentsArray={videoDetails.comments}/>
+                </div>
+                <Videos videosArray={filterOutCurrentVideo} updateVideo={updateVideo}/>
+            </div>
         </div>
     )
 }

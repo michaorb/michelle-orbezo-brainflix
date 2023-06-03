@@ -8,16 +8,26 @@
     @include padding;
     @include section-header;
     padding-top: 0;
+    @include media-tablet {
+        align-items: flex-end;
+        padding-top: 0;
+    }
     &__container {
         display: flex;
         flex-direction: column;
         padding-left: 16px;
         width: 90%;
     }
-    &__profile-placeholder {
+    &__profile-container {
+        display: flex;
+        padding-top: 36px;
+        @include media-tablet {
+            padding-top: 0;
+        }
+    }
+    &__profile {
         background-color: $BF-Mercury;
         @include profile-tn;
-            display: flex;
             width: 36px;
     }
     textarea::placeholder {
@@ -32,19 +42,13 @@
     }
 
     textarea {
-        // background-color: $BF-Mercury;
-        // border-color: $Silver;
-        // border-radius: 4px;
-        // opacity: 0.3;]
+        display: flex;
+        justify-content: flex-end;
         @include form-field;
-        &:focus-visible {
+        &:focus {
             outline: none;
             border-color: $BF-Blue;
         }
-        // &:focus {
-        //     outline: none;
-        //     border-color: $BF-Blue;
-        // }
 
         @include media-tablet {
             height: 1em;
@@ -60,10 +64,11 @@
     &__input {
         display: flex;
         flex-direction: column;
+        row-gap: 16px;
 
         @include media-tablet {
             flex-direction: row;
-            gap: 20px;
+            column-gap: 20px;
         }
     }
 }

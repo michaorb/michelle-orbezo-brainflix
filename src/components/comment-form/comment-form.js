@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
+import ProfileThumbnail from '../../assets/images/Mohan-muruge.jpg';
 
 import '../comment-form/comment-form.css'
 
 function CommentForm() {
     return (
         <div className='form'>
-            <div className='form__profile-placeholder'>
+            <div className='form__profile-container'>
+                <img className="form__profile" src={ProfileThumbnail} alt="Profile thumbnail" />
             </div>
             <form className='form__container'>
                 <label for='comment'><h2>Join the Conversation</h2></label>

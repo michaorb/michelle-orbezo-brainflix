@@ -3,4 +3,7 @@
 .comments {
     @include padding-left-right;
     @include divider;
+    @include media-desktop {
+        padding-right: 0;
+    }
 }

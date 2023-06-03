@@ -5,19 +5,11 @@
 #searchbar {
     margin-bottom: 16px;
     width: 75vw;
-    // color: $Silver;
     @include form-field;
     background-image: url(assets/icons/search.svg);
     background-repeat: no-repeat;
     background-position: 16px 50%;
-    // background-color: $Alabaster;
-    // border-color: $Silver;
-    // border-radius: 4px;
-    // border-style: none;
-    // border: $Silver solid 1px;
-    // padding-top: 12px;
     padding-left: 42px;
-    // padding-bottom: 12px;
     outline: none;
     :active {
         border-color: $Silver;
@@ -26,5 +18,8 @@
         width: 40vw;
         margin-left: 16px;
         margin-right: 16px;
+    }
+    @include media-desktop {
+        width: 20vw;
     }
 }

@@ -73,6 +73,11 @@
     margin-left: 16px;
     margin-right: 16px;
   }
+}
+@media (min-width: 1280px) {
+  #searchbar {
+    width: 20vw;
+  }
 } 
 @font-face {
   font-family: "Avenir";
@@ -257,6 +262,10 @@
   src: url("assets/fonts/Alternative/AvenirNextLTPro.ttf") format(ttf);
 }
 video {
+  aspect-ratio: 16/9;
+  background-color: #000;
+  -o-object-fit: contain;
+  object-fit: contain;
   width: 100%;
 } 
 @font-face {
@@ -357,6 +366,11 @@ video {
     line-height: 22px;
   }
 }
+@media (min-width: 1280px) {
+  .description {
+    padding-right: 0;
+  }
+}
 .description h1 {
   margin-top: 0;
 }
@@ -379,6 +393,7 @@ video {
 @media (min-width: 768px) {
   .description__tablet-bp {
     display: flex;
+    justify-content: space-between;
   }
 }
 .description__attributes {
@@ -393,6 +408,7 @@ video {
 @media (min-width: 768px) {
   .description__attributes {
     display: flex;
+    flex-direction: row;
   }
 }
 .description__icons {
@@ -408,6 +424,7 @@ video {
 @media (min-width: 768px) {
   .description__icons {
     display: flex;
+    flex-direction: row;
   }
 }
 .description__likes, .description__views {
@@ -434,6 +451,11 @@ video {
   .description__text {
     padding-top: 36px;
     padding-bottom: 24px;
+  }
+}
+@media (min-width: 1280px) {
+  .description__text {
+    padding-right: 24px;
   }
 }
 .description__bolded {
@@ -491,6 +513,12 @@ video {
   margin: 0;
 }
 
+@media (min-width: 768px) {
+  .form {
+    align-items: flex-end;
+    padding-top: 0;
+  }
+}
 .form__container {
   display: flex;
   flex-direction: column;
@@ -498,19 +526,28 @@ video {
   width: 90%;
 }
 
-.form__profile-placeholder {
+.form__profile-container {
+  display: flex;
+  padding-top: 36px;
+}
+
+@media (min-width: 768px) {
+  .form__profile-container {
+    padding-top: 0;
+  }
+}
+.form__profile {
   background-color: #E1E1E1;
   width: 36px;
   height: 36px;
   border-radius: 50%;
   -o-object-fit: cover;
   object-fit: cover;
-  display: flex;
   width: 36px;
 }
 
 @media (min-width: 768px) {
-  .form__profile-placeholder {
+  .form__profile {
     width: 40px;
     height: 40px;
   }
@@ -540,6 +577,8 @@ video {
   }
 }
 .form textarea {
+  display: flex;
+  justify-content: flex-end;
   color: #AFAFAF;
   background-color: #FAFAFA;
   border-color: #AFAFAF;
@@ -549,10 +588,17 @@ video {
   padding: 12px;
 }
 
-.form textarea :focus-visible {
+.form textarea:focus {
+  outline: none;
   border-color: #0095ff;
 }
 
+@media (min-width: 768px) {
+  .form textarea {
+    height: 1em;
+    flex-grow: 3;
+  }
+}
 .form button {
   font-family: "Avenir", "Montserrat";
   text-transform: uppercase;
@@ -596,6 +642,19 @@ video {
   .form button {
     width: 150px;
   }
+}
+.form__input {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+@media (min-width: 768px) {
+  .form__input {
+    flex-direction: row;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+  }
 } 
 @font-face {
   font-family: "Avenir";
@@ -636,6 +695,12 @@ video {
   width: 100%;
   border-top: solid 1px;
   border-color: #E1E1E1;
+}
+
+@media (min-width: 1280px) {
+  .comments {
+    padding-right: 0;
+  }
 } 
 .video {
   display: flex;
@@ -748,7 +813,23 @@ video {
     padding-top: 36px;
     padding-bottom: 24px;
   }
+}
+@media (min-width: 768px) {
+  .videos {
+    width: 40%;
+  }
+}
+@media (min-width: 1280px) {
+  .videos {
+    border-left: #E1E1E1 solid 1px;
+  }
 } 
+@media (min-width: 1280px) {
+  .body__container {
+    display: flex;
+  }
+}
+
 p {
   margin: 0;
 }/*# sourceMappingURL=App.css.map */

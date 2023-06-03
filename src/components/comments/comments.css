@@ -36,4 +36,9 @@
   width: 100%;
   border-top: solid 1px;
   border-color: #E1E1E1;
+}
+@media (min-width: 1280px) {
+  .comments {
+    padding-right: 0;
+  }
 }/*# sourceMappingURL=comments.css.map */

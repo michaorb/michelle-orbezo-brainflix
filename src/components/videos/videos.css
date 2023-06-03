@@ -106,4 +106,9 @@
   .videos {
     width: 40%;
   }
+}
+@media (min-width: 1280px) {
+  .videos {
+    border-left: #E1E1E1 solid 1px;
+  }
 }/*# sourceMappingURL=videos.css.map */

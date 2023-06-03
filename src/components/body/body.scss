@@ -9,3 +9,10 @@
 @use '../comments/comments.css'; // Comments
 @use '../videos/videos.css'; // Videos
 
+.body {
+    &__container {
+        @include media-desktop {
+            display: flex;
+        }
+    }
+}

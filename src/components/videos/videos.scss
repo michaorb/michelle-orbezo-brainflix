@@ -17,4 +17,7 @@
     @include media-tablet {
         width: 40%;
     }
+    @include media-desktop {
+        border-left: $BF-Mercury solid 1px;
+    }
 }
